@@ -7,7 +7,7 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('build') {
       steps {
         sh 'docker build -t jenkinsboimage:v1.0 .'
       }
