@@ -1,5 +1,7 @@
 pipeline {
-  agent any
+  agent {
+    my-greatest-agent
+  }
   stages {
     stage('checkout') {
       steps {
@@ -9,7 +11,7 @@ pipeline {
 
     stage('build') {
       steps {
-        sh 'docker build -t jenkinsboimage:v1.0 .'
+        sh 'docker build -t jenkinsnginximage:v1.0 .'
       }
     }
 
