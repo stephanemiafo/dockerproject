@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    my-greatest-agent
+    label 'my-greatest-agent'
   }
   stages {
     stage('checkout') {
