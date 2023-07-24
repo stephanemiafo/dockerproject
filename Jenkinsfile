@@ -16,7 +16,7 @@ pipeline {
     }
     stage('test') {
       steps {
-        sh 'docker run --rm --name ngigit -itd -p 9900:80 gitnginx:v1.0.0'
+        sh 'docker run --rm --name ngigit -itd -p 9000:80 gitnginx:v1.0.0'
       }
     }
     stage('tagging the immage') {
